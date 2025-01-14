@@ -1,0 +1,8 @@
+#Exercise 1 Exam
+
+-Creating my repository in github
+-mkdir trial_exam
+-git clone /link/to/git/
+-git init
+-git branch
+-git switch -c "main"
