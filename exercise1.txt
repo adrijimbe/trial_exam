@@ -1,0 +1,13 @@
+On github online:
+
+Create a repository called trial_exam and copy the ssh
+Terminal:
+mkdir trial_exam
+git clone linkinshh
+git init
+nano exercise1.txt
+git status
+git add exercise1.txt
+git commit -m "This is my first exercise"
+git push
+
