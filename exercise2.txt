@@ -1,0 +1,37 @@
+Exercise 2 
+
+A dental practice keeps track of the following data:
+
+1NF: 
+
+|staffNo|dentistName|patientNo|patientName|apptTime|apptDate|surgeryNo|
+
+Primary key: *staffNo, apptDate, apptTime* 
+
+
+2NF:
+
+|staffNo|dentistName|
+Primary key: staffNo
+
+|patientNo|patientName|surgeryNo|
+Primary key: patientNo
+
+|staffNo|apptDate|apptTime|patientNo|
+Primary key: staffNo, apptDate, apptTime
+
+3NF: 
+
+|staffNo|dentistName|
+Primary key: staffNo
+
+|patientNo|patientName|surgeryNo
+Primary key:patientNo
+
+|patientNo|apptTime|apptDate|staffNo|
+Primary key: staffNo, appTime, appDate
+
+|surgeryNo|staffNo|apptDate|appTime|
+
+
+

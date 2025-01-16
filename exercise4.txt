@@ -1,0 +1,18 @@
+Exercise 4 - Adriana Jiménez
+
+- CREATE vacation;
+- mysql -u root -p
+- SHOW GRANTS FOR 'guest'@'localhost'
+- GRANT ALL PRIVILEGES ON  database* TO 'guest'@'localhost';
+- SOURCE /home/guest/Downloads/vacations.sql;
+- SELECT guestname, guestaddress FROM guest WHERE guestaddress LIKE '%London' ORDER BY guestname ;
+- SELECT roomno, price FROM room WHERE (type = 'double' OR type = 'family')AND price < 40 ORDER BY price;
+- SELECT * FROM booking WHERE dateto IS NULL;
+	- SELECT * FROM booking WHERE dateto IS NOT NULL;
+- SELECT avg(price) AS average_price FROM room;
+- SELECT sum(price) AS revenue_double FROM room WHERE type = 'double';
+- SELECT COUNT(DISTINCT guestno) AS guest_count  FROM booking WHERE MONTH(datefrom) = 8 OR MONTH(dateto) = 8;
+- SELECT type, price FROM room WHERE hotelno = 'fb02';
+- SELECT guestno FROM booking WHERE hotelno = 'fb02';
+- SELECT guestno, guestname, guestaddress FROM guest WHERE guestno IN ( SELECT guestno FROM booking WHERE hotelno = 'fb02' );
+
